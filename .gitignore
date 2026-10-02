@@ -1,0 +1,128 @@
+# ==============================================================================
+# Environment & Secrets (Crucial: never commit real credentials)
+# ==============================================================================
+.env
+.env.*
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+# Explicitly keep example environment templates
+!.env.example
+!.env*.example
+!**/.env.example
+!**/.env*.example
+
+*.pem
+*.key
+*.pfx
+azure_credentials.json
+
+# ==============================================================================
+# Python
+# ==============================================================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+.venv/
+
+# Testing & Type checking
+.coverage
+.pytest_cache/
+.tox/
+.nox/
+htmlcov/
+.coverage.*
+coverage.xml
+*.cover
+.hypothesis/
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.pyre/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+.python-version
+Pipfile.lock
+__pypackages__/
+
+# Celery
+celerybeat-schedule
+celerybeat.pid
+
+# ==============================================================================
+# Databases & Vector Stores & Uploads
+# ==============================================================================
+*.db
+*.sqlite
+*.sqlite3
+interview_assistant.db
+voice-assistant/backend/interview_assistant.db
+voice-assistant/backend/db/
+db/vector_store/
+voice-assistant/backend/db/vector_store/
+
+# Dynamic upload directories and temp files
+uploads/
+voice-assistant/backend/uploads/
+temp/
+tmp/
+
+# Logs
+*.log
+logs/
+KMS/logs/
+
+# ==============================================================================
+# Node.js & Frontend (Next.js)
+# ==============================================================================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+.next/
+out/
+*.tsbuildinfo
+
+# ==============================================================================
+# IDE & Operating System
+# ==============================================================================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
